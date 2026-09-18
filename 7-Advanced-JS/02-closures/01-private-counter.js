@@ -5,7 +5,7 @@ function createCounter() {
     return function () {
         count ++;
         return count
-    }
+     }
 }
 
 const counter = createCounter();
