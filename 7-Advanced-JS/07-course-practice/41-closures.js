@@ -7,10 +7,10 @@ function createCounter(){
     
 } 
 const counter = createCounter()
-// console.log(counter());
-// console.log(counter());
-// console.log(counter());
-// console.log(counter());
+console.log(counter());
+console.log(counter());
+console.log(counter());
+console.log(counter());
 
 
 // task 2
@@ -39,8 +39,8 @@ function login() {
 
 const limitedLogin = rateLimiter(login, 2000);
 
-// console.log(limitedLogin());
-// console.log(limitedLogin());
+console.log(limitedLogin());
+console.log(limitedLogin());
 
 // task 3 
 function memoize(fn){
