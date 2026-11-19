@@ -1,0 +1,141 @@
+
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background: #0b0f19;
+    color: #f1f5f9;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 16px;
+}
+
+/* Main Container */
+.container {
+    width: 100%;
+    max-width: 550px;
+    background: #151b2b;
+    padding: 35px;
+    border: 1px solid #263249;
+    border-radius: 20px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
+}
+
+/* Heading */
+h1 {
+    font-size: 30px;
+    font-weight: 800;
+    margin-bottom: 28px;
+    letter-spacing: -1px;
+    color: #ffffff;
+}
+
+/* Input Section */
+.input-section {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 28px;
+}
+
+input {
+    flex: 1;
+    min-width: 0;
+    padding: 15px;
+    background: #0b1220;
+    border: 1px solid #334155;
+    border-radius: 10px;
+    outline: none;
+    color: #ffffff;
+    font-size: 14px;
+    transition: border 0.3s ease;
+}
+
+input::placeholder {
+    color: #64748b;
+}
+
+input:focus {
+    border-color: #8b5cf6;
+}
+
+/* Add Button */
+button {
+    border: none;
+    padding: 0 20px;
+    background: linear-gradient(135deg, #8b5cf6, #6366f1);
+    color: white;
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(139, 92, 246, 0.3);
+}
+
+/* Task List */
+ul {
+    list-style: none;
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    padding: 16px;
+    margin-bottom: 12px;
+    background: #1e293b;
+    border: 1px solid #334155;
+    border-radius: 12px;
+    color: #e2e8f0;
+    font-size: 14px;
+    overflow-wrap: anywhere;
+}
+
+/* Delete Button */
+li button {
+    background: #3b1c2a;
+    color: #fb7185;
+    padding: 8px 12px;
+    border: 1px solid #5b2638;
+    border-radius: 8px;
+    flex-shrink: 0;
+}
+
+li button:hover {
+    background: #7f1d1d;
+    box-shadow: none;
+}
+
+/* Mobile Responsive */
+@media (max-width: 480px) {
+    .container {
+        padding: 24px 18px;
+    }
+
+    h1 {
+        font-size: 25px;
+    }
+
+    .input-section {
+        gap: 8px;
+    }
+
+    button {
+        padding: 0 14px;
+    }
+}
